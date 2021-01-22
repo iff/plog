@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.12.10",
-    "@mdx-js/loader": "^1.6.21",
+    "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.5",
     "@types/styled-components": "^5.1.4",
     "@zhif/components": "0.0.3",
