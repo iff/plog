@@ -23,7 +23,7 @@ export default ({ posts }) => (
       </Posts>
     </div>
 
-    <Footer>2020 Yves Ineichen</Footer>
+    <Footer>2021 Yves Ineichen</Footer>
   </>
 );
 

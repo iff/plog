@@ -1,22 +1,29 @@
+import { MDXProvider } from "@mdx-js/react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ArrowLeft } from "react-feather";
 import styled from "styled-components";
 
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Image from "../components/Image";
+
+const components = { Header, Footer, Image };
+
 export default ({ post }) => {
   const Post = dynamic(() => import(`../content/${post}`));
 
   return (
-    <>
-      <Header>
+    <MDXProvider components={components}>
+      <HeaderNav>
         <Link href="/">
           <a>
             <ArrowLeft color="white" size={20} />
           </a>
         </Link>
-      </Header>
+      </HeaderNav>
       <Post />
-    </>
+    </MDXProvider>
   );
 };
 
@@ -34,7 +41,7 @@ export async function getStaticProps({ params }) {
   return { props: { ...params } };
 }
 
-const Header = styled.div`
+const HeaderNav = styled.div`
   position: fixed;
   top: 0;
   left: 0;
