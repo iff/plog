@@ -21,7 +21,7 @@
     "react-dom": "16.14.0",
     "react-feather": "^2.0.9",
     "react-intersection-observer": "^8.31.0",
-    "sharp": "^0.27.0",
+    "sharp": "^0.27.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
